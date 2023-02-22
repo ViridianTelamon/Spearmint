@@ -15,7 +15,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
-app.config["SECRET"] = "0bf4e18f5ea33519601b4ed1fb77f80e"
+app.config["SECRET"] = ""
 
 socketio = SocketIO(app, cors_allowed_origins="*")
 
