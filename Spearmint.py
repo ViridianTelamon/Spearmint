@@ -22,7 +22,7 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 @socketio.on("message")
 def handle_messsage(message):
     print("Received Message:  " + message)
-    if message != "User Connected!":
+    if message != "User Connected.":
         send(message, broadcast=True)
 
 @app.route("/")
